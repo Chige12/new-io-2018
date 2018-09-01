@@ -1,0 +1,36 @@
+footer {
+  padding-bottom: 60px;
+  .footer-logo {
+    width: 20%;
+    padding-right: 1%;
+    margin: auto;
+    margin-top: 80px;
+  }
+  .catch {
+    margin: 30px auto 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.9rem;
+    letter-spacing: .2rem;
+    .nanika {
+      font-size: 2.3rem;
+      margin: 0 1.3rem;
+      padding: 0 2rem;
+      position: relative;
+      img.nanika1 {
+        display: inline-block;
+        position: absolute;
+        bottom: -1.4rem;
+        left: -.5rem;
+        width: 1.8rem;
+      }
+      img.nanika2 {
+        display: inline-block;
+        position: absolute;
+        top: -.5rem;
+        right: -.5rem;
+        width: 2rem;
+      }
+    }
+  }
+}

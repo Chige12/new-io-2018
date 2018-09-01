@@ -1,0 +1,111 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    meta(name='viewport' content='width=device-width,initial-scale=1')
+    link(rel="stylesheet", href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css")
+    link(rel="stylesheet", href="./index.css")
+    link(rel="icon" type="image/x-icon" href="./images/favicon.ico")
+    title I/O
+
+  body
+    header
+      .container
+        img(src="./images/io-logo.svg", alt="I/O Logo").toplogo
+        .catch 新しい
+          span.nanika
+            img(src="./images/nanika1.svg").nanika1
+            span なにか
+            img(src="./images/nanika2.svg").nanika2
+          span を見つけよう
+
+        .description
+          p クリエイター交流イベント
+          p 今秋11月頃　大阪にて開催予定！
+
+        a(href="http://").entry 参加登録はコチラ
+
+    main
+      section.video#video
+        .container
+          iframe(src="https://www.youtube.com/embed/UA9LDisFtOo?rel=0&amp;controls=0&amp;showinfo=0",
+            frameborder="0",
+            allow="autoplay; encrypted-media",
+            allowfullscreen).video-link
+
+      section.concept
+        .container
+          img(src="./images/nanika3.svg").nanika3
+          img(src="./images/nanika4.svg").nanika4
+          p このイベントで、
+          p もっと多くのクリエイターと
+          p 新しい知識や想像力、
+          p コミュニティを見つける楽しさを共有したい。
+
+      section.place
+        .container
+          .section-name
+            h2 PLACE
+            p 開催場所
+          p Comming soon...
+          p 決定しだい、公開いたします。
+
+      section.sponsor
+        .container
+          .section-name
+            h2 SPONSOR
+            p スポンサー
+          p 現在このイベントにご協賛いただける企業・団体様を募集しております。
+          p 資料請求・ご質問・ご相談など受け付けておりますので、
+          p 以下メールアドレスにご連絡ください。
+          button().mail#mail-copy io.event.official[at]gmail.com
+
+      section.member
+        .container
+          .section-name
+            h2 MEMBER
+            p 運営メンバー
+          .member-list
+            a(href="https://twitter.com/inurabu_m").member-list-item
+              img(src="./images/icons/inurabu.jpg", alt="いぬらぶ")
+              p いぬらぶ
+            a(href="https://twitter.com/kome0455").member-list-item
+              img(src="./images/icons/kome.png", alt="kome")
+              p kome
+            a(href="https://twitter.com/chige12_").member-list-item
+              img(src="./images/icons/Chige.png", alt="ちげ")
+              p ちげ
+            a(href="https://twitter.com/_Quga").member-list-item
+              img(src="./images/icons/QUGA.jpg", alt="QUGA")
+              p QUGA
+
+      section.sns
+        .container
+          .folow
+            p Twitterをフォローして最新情報をチェック！
+            a(href="https://twitter.com/new_IO_").sns-button
+              img(src="./images/twitter.svg", alt="twitterをフォロー").sns-icon
+              p Twitterをフォロー
+          .shere
+            p SNSでどんどんシェア！
+            .button-wrapper
+              a(href="https://twitter.com/intent/tweet?text=クリエイター交流イベントI/O　大阪で開催予定！&url=https://new-io.jp &hashtags=IO_2018" rel="nofollow", onClick="window.open(encodeURI(decodeURI(this.href)),'twwindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1'); return false;").sns-button
+                img(src="./images/twitter.svg", alt="つぶやく").sns-icon
+                p つぶやく
+              a(href="http://www.facebook.com/share.php?u=https://new-io.jp" onclick="window.open(this.href,'FBwindow','width=650,height=450,menubar=no,toolbar=no,scrollbars=yes');return false;" title="Facebookでシェア").sns-button
+                img(src="./images/facebook.svg", alt="シェア").sns-icon
+                p シェア
+
+    footer
+      .container
+        img(src="./images/io-logo.svg", alt="I/O Logo").footer-logo
+        .catch 新しい
+          span.nanika
+            img(src="./images/nanika1.svg").nanika1
+            span なにか
+            img(src="./images/nanika2.svg").nanika2
+          span を見つけよう
+
+        a(href="http://").entry 参加登録はコチラ
+
+    script(src="./scripts/index.js")
