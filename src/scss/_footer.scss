@@ -33,6 +33,15 @@ footer {
       }
     }
   }
+  .txt {
+    font-size: 1.8rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    p.intxt {
+      display: inline-block;
+    }
+  }
 }
 @media(max-width: 620px) {
   footer {
@@ -52,6 +61,18 @@ footer {
         margin: 0 1.1rem;
         padding: 0 1.8rem;
         position: relative;
+      }
+    }
+  }
+}
+@media(max-width: 430px){
+  footer {
+    .txt {
+      flex-wrap: wrap;
+      margin: 20px;
+      p.intxt {
+        display: block;
+        margin: 0;
       }
     }
   }

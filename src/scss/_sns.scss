@@ -37,4 +37,39 @@
     flex-wrap: nowrap;
     justify-content: center;
   }
+  .txt {
+    font-size: 1.8rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    p.intxt {
+      display: inline-block;
+    }
+  }
+}
+@media(max-width: 620px){
+  .sns {
+    .sns-button {
+      width: 50%;
+    }
+    .button-wrapper {
+      flex-wrap: wrap;
+    }
+  }
+}
+@media(max-width: 430px){
+  .sns {
+    .sns-button {
+      width: 60%;
+      padding: 12px 32px;
+    }
+    .txt {
+      flex-wrap: wrap;
+      margin: 20px;
+      p.intxt {
+        display: block;
+        margin: 0;
+      }
+    }
+  }
 }

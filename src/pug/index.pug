@@ -9,7 +9,7 @@ html(lang="ja")
     title I/O 2018
     meta(property="fb:app_id" content="261820754438468")
     meta(property="og:title" content="クリエイター交流イベント「I/O」大阪にて開催！")
-    meta(property="og:description" content="もっと多くのクリエイターと、知識や想像力、コミュニティなどの新しい「なにか」を見つけて、その楽しさを共有したいという思いのもとに発足したイベント。クリエイターに新しいInputと新しいOutputを。今秋11月頃　大阪にて開催予定！")
+    meta(property="og:description" content="もっと多くのクリエイターと、知識や想像力、コミュニティなどの新しい「なにか」を見つけて、その楽しさを共有したいという思いのもとに発足したイベント。クリエイターに新しいInputと新しいOutputを。今秋11月頃　大阪にて開催決定！")
     meta(property="og:site_name" content="I/O 2018")
     meta(property="og:type" content="website")
     meta(property="og:image" content="https://new-io.jp/images/ogp.png")
@@ -31,9 +31,9 @@ html(lang="ja")
 
         .description
           p クリエイター交流イベント
-          p 今秋11月頃　大阪にて開催予定！
+          p 今秋11月頃　大阪にて開催決定！
 
-        a(href="http://").entry 参加登録はコチラ
+        a(href="https://atnd.org/events/99849").entry 参加登録はコチラ
 
     main
       section.video#video
@@ -69,7 +69,7 @@ html(lang="ja")
             p 現在このイベントにご協賛いただける企業・団体様を募集しております。
             p 資料請求・ご質問・ご相談など受け付けておりますので、
             p 以下メールアドレスにご連絡ください。
-            button().mail#mail-copy io.event.official[at]gmail.com
+            button.mail#mail-copy io.event.official[at]gmail.com
 
         .member
           .container
@@ -93,14 +93,16 @@ html(lang="ja")
       section.sns
         .container
           .folow
-            p Twitterをフォローして最新情報をチェック！
+            .txt 
+              p.intxt Twitterをフォローして
+              p.intxt 最新情報をチェック！
             a(href="https://twitter.com/new_IO_").sns-button
               img(src="./images/twitter.svg", alt="twitterをフォロー").sns-icon
               p Twitterをフォロー
           .shere
-            p SNSでどんどんシェア！
+            p.txt SNSでどんどんシェア！
             .button-wrapper
-              a(href="https://twitter.com/intent/tweet?text=クリエイター交流イベントI/O　大阪で開催予定！&url=https://new-io.jp &hashtags=IO_2018" rel="nofollow", onClick="window.open(encodeURI(decodeURI(this.href)),'twwindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1'); return false;").sns-button
+              a(href="https://twitter.com/intent/tweet?text=クリエイター交流イベントI/O　大阪で開催決定！&url=https://new-io.jp &hashtags=IO_2018" rel="nofollow", onClick="window.open(encodeURI(decodeURI(this.href)),'twwindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1'); return false;").sns-button
                 img(src="./images/twitter.svg", alt="つぶやく").sns-icon
                 p つぶやく
               a(href="http://www.facebook.com/share.php?u=https://new-io.jp" onclick="window.open(this.href,'FBwindow','width=650,height=450,menubar=no,toolbar=no,scrollbars=yes');return false;" title="Facebookでシェア").sns-button
@@ -117,6 +119,10 @@ html(lang="ja")
             img(src="./images/nanika2.svg").nanika2
           span を見つけよう
 
-        a(href="http://").entry 参加登録はコチラ
+        .txt
+          p.intxt その他詳しい内容などは
+          p.intxt 以下リンクにて
+
+        a(href="https://atnd.org/events/99849").entry 参加登録はコチラ
 
     script(src="./scripts/index.js")
