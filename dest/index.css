@@ -321,6 +321,7 @@ body {
   width: 100%;
   height: 100%;
   font-size: 1.8rem;
+  line-height: 1.6;
   text-align: center; }
 
 ::selection {
@@ -378,7 +379,11 @@ a.entry {
 
 header {
   margin: 0;
-  padding: 70px 0; }
+  padding: 70px 0;
+  background-image: url(./images/back-top.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
   header .toplogo {
     width: 40%;
     padding-right: 1%;
@@ -410,6 +415,48 @@ header {
   header .description {
     margin: 30px auto; }
 
+@media (max-width: 940px) {
+  header .catch {
+    margin: 60px auto;
+    font-size: 2rem;
+    letter-spacing: .2rem; }
+    header .catch .nanika {
+      font-size: 2.7rem;
+      margin: 0 1.3rem; } }
+
+@media (max-width: 620px) {
+  header {
+    padding: 40px 0; }
+    header .toplogo {
+      width: 60%;
+      padding-right: 1%;
+      margin: auto;
+      margin-top: 20px; }
+    header .catch {
+      margin: 60px auto;
+      font-size: 1.8rem;
+      letter-spacing: .2rem; }
+      header .catch .nanika {
+        font-size: 2.5rem;
+        margin: 0 1.1rem;
+        padding: 0 1.7rem; }
+        header .catch .nanika img.nanika1 {
+          bottom: -1.4rem;
+          left: -.5rem;
+          width: 1.4rem; }
+        header .catch .nanika img.nanika2 {
+          top: -.5rem;
+          right: -.5rem;
+          width: 1.7rem; } }
+
+main .section-name {
+  padding: 10px 0; }
+  main .section-name h2 {
+    font-size: 3rem;
+    letter-spacing: 1.4rem;
+    line-height: 3rem;
+    margin: 0; }
+
 main .video {
   background-color: #45DDB5;
   background: linear-gradient(45deg, #45DDB5 0%, #74FFC7 100%);
@@ -417,6 +464,11 @@ main .video {
   main .video .video-link {
     width: 920px;
     height: 517.5px; }
+
+@media (max-width: 940px) {
+  main .video .video-link {
+    width: calc(90vw - 16px);
+    height: calc((90vw - 16px)*(315 / 560)); } }
 
 main .concept {
   padding: 40px 0;
@@ -440,80 +492,95 @@ main .concept {
     z-index: -1;
     width: 20%; }
 
-main .section-name {
-  padding: 10px 0; }
-  main .section-name h2 {
-    font-size: 3rem;
-    letter-spacing: 1.4rem;
-    line-height: 3rem;
-    margin: 0; }
+@media (max-width: 940px) {
+  main .concept {
+    font-size: 2rem; } }
+
+@media (max-width: 620px) {
+  main .concept {
+    font-size: 1.8rem; }
+    main .concept p {
+      padding-left: 6%; } }
 
 main .place {
   padding: 20px 0;
   background-color: #E2FF66;
   background: linear-gradient(45deg, #E2FF66 0%, #BDFF87 100%); }
 
-main .sponsor {
-  padding: 60px 0 0; }
-  main .sponsor button.mail {
-    position: relative;
-    border: 0;
-    background: white;
-    color: #242424;
-    cursor: pointer;
-    padding: 4px;
-    margin-bottom: 30px;
-    z-index: 0;
-    transition: 0.3s cubic-bezier(0.17, 0.07, 0.02, 0.98);
-    text-decoration-line: underline;
-    text-underline-position: under; }
-    main .sponsor button.mail::after {
-      content: "メールアドレスをコピー";
-      position: absolute;
-      bottom: -5.4rem;
-      left: 0;
-      right: 0;
-      padding: 1rem;
-      background: #242424;
-      color: white;
-      z-index: 1;
-      opacity: 0;
-      transition: 0.3s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
-    main .sponsor button.mail::before {
-      content: "";
-      position: absolute;
-      bottom: -1.4rem;
-      left: 0;
-      right: 0;
-      margin: auto;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 14px 14px 14px;
-      border-color: transparent transparent #242424 transparent;
-      z-index: 1;
-      opacity: 0;
-      transition: 0.3s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
-    main .sponsor button.mail:hover::before {
-      opacity: 1; }
-    main .sponsor button.mail:hover::after {
-      opacity: 1; }
-
-main .member {
-  padding: 20px 0; }
-  main .member .member-list {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    padding: 30px 16% 60px; }
-    main .member .member-list .member-list-item img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      transition: 0.2s cubic-bezier(0, 0.61, 0.32, 0.99); }
-      main .member .member-list .member-list-item img:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 10px 20px rgba(42, 90, 90, 0.4); }
+main .sponsor-member {
+  background-image: url(./images/back3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  main .sponsor-member .sponsor {
+    padding: 60px 0 0; }
+    main .sponsor-member .sponsor button.mail {
+      position: relative;
+      border: 0;
+      color: #242424;
+      background: transparent;
+      cursor: pointer;
+      padding: 4px;
+      margin-bottom: 30px;
+      z-index: 0;
+      transition: 0.3s cubic-bezier(0.17, 0.07, 0.02, 0.98);
+      text-decoration-line: underline;
+      text-underline-position: under; }
+      main .sponsor-member .sponsor button.mail::after {
+        content: "メールアドレスをコピー";
+        position: absolute;
+        bottom: -5.4rem;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        background: #242424;
+        color: white;
+        z-index: 1;
+        opacity: 0;
+        transition: 0.3s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
+      main .sponsor-member .sponsor button.mail::before {
+        content: "";
+        position: absolute;
+        bottom: -1.4rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 14px 14px 14px;
+        border-color: transparent transparent #242424 transparent;
+        z-index: 1;
+        opacity: 0;
+        transition: 0.3s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
+      main .sponsor-member .sponsor button.mail:hover::before {
+        opacity: 1; }
+      main .sponsor-member .sponsor button.mail:hover::after {
+        opacity: 1; }
+  main .sponsor-member .member {
+    padding: 20px 0; }
+    main .sponsor-member .member .member-list {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      padding: 30px 16% 60px; }
+      main .sponsor-member .member .member-list .member-list-item img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        transition: 0.2s cubic-bezier(0, 0.61, 0.32, 0.99); }
+        main .sponsor-member .member .member-list .member-list-item img:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 10px 20px rgba(42, 90, 90, 0.4); }
+  @media (max-width: 700px) {
+    main .sponsor-member .member .member-list {
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      main .sponsor-member .member .member-list .member-list-item {
+        width: 50%;
+        padding-bottom: 30px; }
+        main .sponsor-member .member .member-list .member-list-item p {
+          margin: 5px auto; } }
 
 main .sns {
   padding: 20px 0;
@@ -529,7 +596,11 @@ main .sns {
     margin: 0 8px;
     margin-bottom: 16px;
     display: inline-block;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: 0.2s cubic-bezier(0, 0.61, 0.32, 0.99); }
+    main .sns .sns-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(42, 90, 90, 0.4); }
     main .sns .sns-button .sns-icon {
       display: inline-block;
       height: 3rem;
@@ -576,3 +647,37 @@ footer {
         top: -.5rem;
         right: -.5rem;
         width: 2rem; }
+
+@media (max-width: 620px) {
+  footer {
+    padding-bottom: 40px; }
+    footer .footer-logo {
+      width: 30%;
+      margin-top: 50px; }
+    footer .catch {
+      margin: 20px auto 30px;
+      width: 100%;
+      text-align: center;
+      font-size: 1.5rem;
+      letter-spacing: .2rem; }
+      footer .catch .nanika {
+        font-size: 2rem;
+        margin: 0 1.1rem;
+        padding: 0 1.8rem;
+        position: relative; } }
+
+@media (max-width: 420px) {
+  footer .footer-logo {
+    width: 40%; } }
+
+@media (max-width: 940px) {
+  .container {
+    width: 90%; } }
+
+@media (max-width: 420px) {
+  a.entry {
+    min-width: 240px; }
+    a.entry::before {
+      min-width: 240px; }
+    a.entry::after {
+      min-width: 240px; } }

@@ -1,0 +1,18 @@
+.video {
+  background-color: $theme-green;
+  background: linear-gradient(45deg, $theme-green 0%, $sub-theme-green 100%);
+  padding: 60px 0;
+  .video-link {
+    width: (560px / 560px) * $container-width;
+    height: (315px / 560px) * $container-width;
+  }
+}
+
+@media(max-width: 940px) {
+  .video {
+    .video-link {
+      width: calc(90vw - 16px);
+      height: calc((90vw - 16px)*(315 / 560));
+    }
+  }
+}

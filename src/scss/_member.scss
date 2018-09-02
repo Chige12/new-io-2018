@@ -1,0 +1,36 @@
+.member {
+  padding: 20px 0;
+  .member-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 30px 16% 60px;
+    .member-list-item {
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        transition: .2s $bezier-ease-out;
+        &:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 10px 20px $shadow-blue;
+        }
+      }
+    }
+  }
+}
+@media(max-width: 700px) {
+  .member {
+    .member-list {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .member-list-item {
+        width:50%;
+        padding-bottom: 30px;
+        p {
+          margin: 5px auto;
+        }
+      }
+    }
+  }
+}

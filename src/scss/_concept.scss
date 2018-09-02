@@ -1,0 +1,39 @@
+.concept {
+  padding: 40px 0;
+  text-align: left;
+  font-size: 2.2rem;
+  line-height: 4rem;
+  letter-spacing: .2rem;
+  z-index: 0;
+  p {
+    padding-left: 18%;
+  }
+  .nanika3 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: -1;
+    width: 5%;
+  }
+  .nanika4 {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    z-index: -1;
+    width: 20%;
+  }
+}
+
+@media(max-width: 940px) {
+  .concept {
+    font-size: 2rem;
+  }
+}
+@media(max-width: 620px){
+  .concept {
+    font-size: 1.8rem;
+    p {
+      padding-left: 6%;
+    }
+  }
+}
