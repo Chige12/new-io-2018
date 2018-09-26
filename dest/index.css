@@ -507,6 +507,9 @@ main .place {
   background-color: #E2FF66;
   background: linear-gradient(45deg, #E2FF66 0%, #BDFF87 100%); }
 
+main br {
+  display: none; }
+
 main .sponsor-member {
   background-image: url(./images/back3.png);
   background-repeat: no-repeat;
@@ -640,6 +643,10 @@ main .sns {
     main .sns .txt p.intxt {
       display: block;
       margin: 0; } }
+
+@media (max-width: 620px) {
+  main br {
+    display: block; } }
 
 footer {
   padding-bottom: 60px; }
