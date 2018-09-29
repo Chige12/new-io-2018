@@ -471,17 +471,19 @@ main .video {
     height: calc((90vw - 16px)*(315 / 560)); } }
 
 main .concept {
-  padding: 40px 0;
+  padding: 40px 0 0;
   text-align: left;
   font-size: 2.2rem;
   line-height: 4rem;
   letter-spacing: .2rem;
   z-index: 0; }
+  main .concept .container {
+    padding-bottom: 0; }
   main .concept p {
     padding-left: 18%; }
   main .concept .nanika3 {
     position: absolute;
-    bottom: 10px;
+    bottom: -30px;
     left: 10px;
     z-index: -1;
     width: 5%; }
@@ -500,7 +502,38 @@ main .concept {
   main .concept {
     font-size: 1.8rem; }
     main .concept p {
-      padding-left: 6%; } }
+      padding-left: 6%; }
+    main .concept .nanika3 {
+      bottom: -50px; } }
+
+main .target {
+  padding: 0;
+  font-size: 2.2rem;
+  line-height: 4rem;
+  letter-spacing: .2rem;
+  z-index: 0;
+  padding-bottom: 40px; }
+  main .target .wrapper {
+    padding: 0 10%; }
+    main .target .wrapper ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: 1.8rem;
+      line-height: 1.5;
+      letter-spacing: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      main .target .wrapper ul li {
+        margin: .2rem;
+        padding: 2px 14px;
+        border: 1px solid #444;
+        color: #444;
+        border-radius: 30px; }
+
+@media (max-width: 620px) {
+  main .target .wrapper {
+    padding: 0; } }
 
 main .place {
   padding: 20px 0;
@@ -619,6 +652,14 @@ main .sns {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center; }
+  main .sns .button-tag .sns-button .sns-icon {
+    height: 2.5rem;
+    width: 2.8rem;
+    padding-bottom: .4rem; }
+  main .sns .button-tag .sns-button p {
+    font-size: 1.8rem; }
+  main .sns .button-tag span {
+    color: #3c92d4; }
   main .sns .txt {
     font-size: 1.8rem;
     display: flex;
